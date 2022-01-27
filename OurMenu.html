@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OurMenu</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./OurMenu.css" />
+  </head>
+
+  <body>
+    <div id="title-container">
+      <div id="title">Our Menu</div>
+      <div id="line"></div>
+    </div>
+
+    <div id="btn-container">
+      <button class="btn" onclick="fallIn()">All</button>
+      <button class="btn" onclick="breakfast()">Breakfast</button>
+      <button class="btn" onclick="lunch()">Lunch</button>
+      <button class="btn" onclick="shakes()">Shakes</button>
+      <button class="btn" onclick="dinner()">Dinner</button>
+    </div>
+
+    <div id="card-container">
+      <div class="card" id="0">
+        <div class="card-img">
+          <img
+            src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-1.jpeg"
+          />
+        </div>
+        <div class="card-content">
+          <div class="name-price">
+            <span class="name">Buttermilk Pancakes</span>
+            <span class="price">$15.99</span>
+          </div>
+          <div
+            class="card-line"
+            style="
+              background-color: teal;
+              margin: 10px 0;
+              border: 0.5px solid teal;
+            "
+          ></div>
+          <div class="card-detail">
+            I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock
+            freegan copper mug whatever cold-pressed
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="1">
+        <div class="card-img">
+          <img
+            src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-2.jpeg"
+          />
+        </div>
+        <div class="card-content">
+          <div class="name-price">
+            <span class="name">Diner Double</span>
+            <span class="price">$13.99</span>
+          </div>
+          <div
+            class="card-line"
+            style="
+              background-color: teal;
+              margin: 10px 0;
+              border: 0.5px solid teal;
+            "
+          ></div>
+          <div class="card-detail">
+            vaporware iPhone mumblecore selvage raw denim slow-carb leggings
+            gochujang helvetica man braid jianbing. Marfa thundercats
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="2">
+        <div class="card-img">
+          <img
+            src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-3.jpeg"
+          />
+        </div>
+        <div class="card-content">
+          <div class="name-price">
+            <span class="name">Godzilla Milkshake</span>
+            <span class="price">$6.99</span>
+          </div>
+          <div
+            class="card-line"
+            style="
+              background-color: teal;
+              margin: 10px 0;
+              border: 0.5px solid teal;
+            "
+          ></div>
+          <div class="card-detail">
+            ombucha chillwave fanny pack 3 wolf moon street art photo booth
+            before they sold out organic viral.
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="3">
+        <div class="card-img">
+          <img
+            src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-4.jpeg"
+          />
+        </div>
+        <div class="card-content">
+          <div class="name-price">
+            <span class="name">Country Delight</span>
+            <span class="price">$20.99</span>
+          </div>
+          <div
+            class="card-line"
+            style="
+              background-color: teal;
+              margin: 10px 0;
+              border: 0.5px solid teal;
+            "
+          ></div>
+          <div class="card-detail">
+            Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism
+            austin mlkshk truffaut,
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="4">
+        <div class="card-img">
+          <img
+            src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-5.jpeg"
+          />
+        </div>
+        <div class="card-content">
+          <div class="name-price">
+            <span class="name">Egg Attack</span>
+            <span class="price">$22.99</span>
+          </div>
+          <div
+            class="card-line"
+            style="
+              background-color: teal;
+              margin: 10px 0;
+              border: 0.5px solid teal;
+            "
+          ></div>
+          <div class="card-detail">
+            I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock
+            freegan copper mug whatever cold-pressed
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="5">
+        <div class="card-img">
+          <img
+            src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-6.jpeg"
+          />
+        </div>
+        <div class="card-content">
+          <div class="name-price">
+            <span class="name">Oreo Dream</span>
+            <span class="price">$18.99</span>
+          </div>
+          <div
+            class="card-line"
+            style="
+              background-color: teal;
+              margin: 10px 0;
+              border: 0.5px solid teal;
+            "
+          ></div>
+          <div class="card-detail">
+            franzen vegan pabst bicycle rights kickstarter pinterest meditation
+            farm-to-table 90's pop-up
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="6">
+        <div class="card-img">
+          <img
+            src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-7.jpeg"
+          />
+        </div>
+        <div class="card-content">
+          <div class="name-price">
+            <span class="name">Bacon Overflow</span>
+            <span class="price">$8.99</span>
+          </div>
+          <div
+            class="card-line"
+            style="
+              background-color: teal;
+              margin: 10px 0;
+              border: 0.5px solid teal;
+            "
+          ></div>
+          <div class="card-detail">
+            Portland chicharrones ethical edison bulb, palo santo craft beer
+            chia heirloom iPhone everyday
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="7">
+        <div class="card-img">
+          <img
+            src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-8.jpeg"
+          />
+        </div>
+        <div class="card-content">
+          <div class="name-price">
+            <span class="name">American Classic</span>
+            <span class="price">$12.99</span>
+          </div>
+          <div
+            class="card-line"
+            style="
+              background-color: teal;
+              margin: 10px 0;
+              border: 0.5px solid teal;
+            "
+          ></div>
+          <div class="card-detail">
+            carry jianbing normcore freegan. Viral single-origin coffee
+            live-edge, pork belly cloud bread iceland put a bird
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="8">
+        <div class="card-img">
+          <img
+            src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-9.jpeg"
+          />
+        </div>
+        <div class="card-content">
+          <div class="name-price">
+            <span class="name">Quarantine Buddy</span>
+            <span class="price">$16.99</span>
+          </div>
+          <div
+            class="card-line"
+            style="
+              background-color: teal;
+              margin: 10px 0;
+              border: 0.5px solid teal;
+            "
+          ></div>
+          <div class="card-detail">
+            on it tumblr kickstarter thundercats migas everyday carry squid palo
+            santo leggings. Food truck truffaut
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="9">
+        <div class="card-img">
+          <img
+            src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-10.jpeg"
+          />
+        </div>
+        <div class="card-content">
+          <div class="name-price">
+            <span class="name">Steak Dinner</span>
+            <span class="price">$39.99</span>
+          </div>
+          <div
+            class="card-line"
+            style="
+              background-color: teal;
+              margin: 10px 0;
+              border: 0.5px solid teal;
+            "
+          ></div>
+          <div class="card-detail">
+            skateboard fam synth authentic semiotics. Live-edge lyft af, edison
+            bulb yuccie crucifix microdosing.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var x = document.getElementsByClassName("card");
+
+      function breakfast() {
+        x[0].style.display = "flex";
+        x[1].style.display = "none";
+        x[2].style.display = "none";
+        x[3].style.display = "flex";
+        x[4].style.display = "none";
+        x[5].style.display = "none";
+        x[6].style.display = "flex";
+        x[7].style.display = "none";
+        x[8].style.display = "none";
+        x[9].style.display = "none";
+      }
+
+      function fallIn() {
+        x[0].style.display = "flex";
+        x[1].style.display = "flex";
+        x[2].style.display = "flex";
+        x[3].style.display = "flex";
+        x[4].style.display = "flex";
+        x[5].style.display = "flex";
+        x[6].style.display = "flex";
+        x[7].style.display = "flex";
+        x[8].style.display = "flex";
+        x[9].style.display = "flex";
+      }
+
+      function shakes() {
+        x[0].style.display = "none";
+        x[1].style.display = "none";
+        x[2].style.display = "flex";
+        x[3].style.display = "none";
+        x[4].style.display = "none";
+        x[5].style.display = "flex";
+        x[6].style.display = "none";
+        x[7].style.display = "none";
+        x[8].style.display = "flex";
+        x[9].style.display = "none";
+      }
+
+      function lunch() {
+        x[0].style.display = "none";
+        x[1].style.display = "flex";
+        x[2].style.display = "none";
+        x[3].style.display = "none";
+        x[4].style.display = "flex";
+        x[5].style.display = "none";
+        x[6].style.display = "none";
+        x[7].style.display = "flex";
+        x[8].style.display = "none";
+        x[9].style.display = "none";
+      }
+
+      function dinner() {
+        x[0].style.display = "none";
+        x[1].style.display = "none";
+        x[2].style.display = "none";
+        x[3].style.display = "none";
+        x[4].style.display = "none";
+        x[5].style.display = "none";
+        x[6].style.display = "none";
+        x[7].style.display = "none";
+        x[8].style.display = "none";
+        x[9].style.display = "flex";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  padding-bottom: 10vh;
+}
+
+#title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  font-size: 6vw;
+  color: darkslategray;
+  font-weight: bolder;
+}
+
+#line {
+  border: 2px solid goldenrod;
+  width: 20vw;
+}
+
+#btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2vw;
+}
+
+.btn {
+  border: 2px solid goldenrod;
+  width: 15vw;
+  padding: 1vw;
+  border-radius: 10px;
+  background-color: transparent;
+  color: goldenrod;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: goldenrod;
+  color: white;
+}
+
+#card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 45%;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.card-img {
+  height: 100%;
+  width: 50%;
+  border: 4px solid goldenrod;
+  border-radius: 1vh;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-content {
+  height: 100%;
+  width: 50%;
+  padding-left: 10px;
+}
+
+.name-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  color: darkslategray;
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+
+.price {
+  color: goldenrod;
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+
+.card-detail {
+  text-align: center;
+  color: #2f4f4f;
+  font-size: 1.25vw;
+  font-weight: 500;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+  #title {
+    font-size: 6vh;
+  }
+
+  #line {
+    width: 20vh;
+  }
+
+  #btn-container {
+    padding: 2vh 0%;
+  }
+
+  .btn {
+    width: auto;
+    padding: 1vh;
+    border-radius: 0.5vh;
+    font-size: 1.5vh;
+  }
+
+  #card-container {
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    height: 18vh;
+    margin-top: 5vh;
+  }
+
+  .name {
+    color: darkslategray;
+    font-weight: bold;
+    font-size: 1.5vh;
+  }
+
+  .price {
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 1.5vh;
+  }
+
+  .card-detail {
+    text-align: center;
+    color: #2f4f4f;
+    font-size: 1.25vh;
+    font-weight: 500;
+    text-align: justify;
+  }
+}
